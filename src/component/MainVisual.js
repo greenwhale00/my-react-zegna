@@ -23,7 +23,7 @@ const MainVisual = () => {
         arrows: false,
         //dots: true,
         afterChange: index => setIDX(index),
-        autoplay: true,
+        //autoplay: true,
         autoplaySpeed: 5000,
         // fade: true,
     }
@@ -36,8 +36,8 @@ const MainVisual = () => {
                         return (
                             <figure key={slide.id} className={'number0' + slide.id + (idx === IDX ? ' on' : '')}>
                                 <div className="inner">
-                                    <p className='tit'>{slide.desc}</p>
-                                    <h2 className='des'>{slide.content}</h2>
+                                    <h2 className='tit'>{slide.content}</h2>
+                                    <p className='des'>{slide.desc}</p>
                                     <a href={slide.link} target="_blank" className='cbtn'>더 알아보기</a>
                                 </div>
                             </figure>

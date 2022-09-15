@@ -1,39 +1,97 @@
-* {outline: 1px dashed grey;}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+* {
+  /* outline: 1px dashed grey;  */
+}
+
+.inner {
+  position: relative;
+  width: 1500px;
+  margin: 0 auto;
+}
+
+.inner h2 {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+
+.inner p {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 0 20px 0;
+  line-height: 1.45;
+}
+
+.cbtn {
+  display: inline-block;
+  padding: 15px 55px;
+  color: #181818;
+  font-size: 15px;
+  background: #ffffff;
+}
+
+.bbtn {
+  display: inline-block;
+  padding: 15px 55px;
+  color: #f7f7f7;
+  font-size: 15px;
+  background: #181818;
+  text-align: center;
+}
+
+.Header {  
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  line-height: 70px;
+  color: #000; vertical-align: middle;
+}
 
 .hd_wrap {
   width: 1500px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  line-height: 70px;
 }
+
+.Gnb {width: 500px;}
 
 .Gnb ul {
   display: flex;
+  gap: 20px;
 }
 
-.MainVisual {
-  position: relative;
-  color: var(--lc);
-  transform: translateY(-100px);
-  height: calc(100vh - 255px);
+.Gnb ul>li:first-child {
+  color: rgb(161, 105, 60);
+}
+
+.icon {
+  width: 500px; 
+  display: flex;
+  line-height: 70px; 
+  justify-content: flex-end;
+  font-size: 19px;
 }
 
 .MainVisual figure {
   position: relative;
-  height: calc(100vh - 155px);
+  width: 100%;
+  height: 800px;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 150% auto;
-}
-
-.MainVisual figure.on {
-  background-size: 100% auto;
-  transition: 1s;
+  background-size: cover;
+  margin: 0 0 100px 0;
 }
 
 .MainVisual .number01 {
-  background-image: url(../public/assets/main_visual01.png);
+  background-image: url(../public/assets/main_visual01.png) ;
 }
 .MainVisual .number02 {
   background-image: url(../public/assets/main_visual02.png);
@@ -48,12 +106,13 @@
   background-image: url(../public/assets/main_visual05.png);
 }
 
-
 .MainVisual figure .inner {
   position: absolute;
-  top: 50%;
+  text-align: center;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: #fff;
 }
 
 
@@ -74,13 +133,13 @@
 
 
 .MainVisual .slideArrows button {
-  position: absolute;
+position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: transparent;
   border: none;
-  color: var(--lc);
+  color: #f7f7f7;
   font-size: 30px;
   padding: 30px;
   background: rgba(0, 0, 0, 0.2);
@@ -95,6 +154,82 @@
 .MainVisual .slideArrows button:last-child {
   margin: 0 0 0 800px;
 }
+
+.MainContent {
+  margin: 0 0 100px 0;
+  
+}
+.MainContent .category figure {
+  text-align: center;
+}
+.MainContent .category figure img {
+  width: 450px;
+  margin: 0 0 20px 0;
+}
+
+.MainContent .category .box {
+  width: 450px;
+}
+
+.MainContent .slick-slide {
+  margin: 0 0;
+}
+
+.Essential {
+  margin: 0 0 100px 0;
+}
+
+.Essential .img_box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left_box {
+  width: 725px;
+  position: relative;
+  /* border: 1px solid #000; */
+}
+
+
+
+.left_box figure:last-child {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.right_box {
+  width: 725px;
+}
+
+
+.Essential .inner a {
+  text-align: center;
+}
+
+.Collection {
+  margin: 0 0 100px 0;
+}
+
+.Collection .flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.About figure {
+  background-image: url(../public/assets/achillfam-australia.png);
+  width: 100%;
+  height: 560px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 0 0 100px 0;
+  color: #f7f7f7;
+  text-align: center;
+  justify-items: center;
+}
+
 
 
 .Footer p {

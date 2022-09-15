@@ -1,5 +1,3 @@
-
-
 const NAVLINK = [
     { id: 1, menu: "Oasi Cashmere 컬렉션", link: '/' },
     { id: 2, menu: "신제품", link: '/' },
@@ -27,7 +25,7 @@ const Header = () => {
                 </nav>
                 <h1><a href="/"><img src={process.env.PUBLIC_URL + "/assets/Logo_Zegna.png"} alt="제냐" /></a></h1>
                 <div className="icon">
-                    <i className='xi-search'></i>
+                    <a href=""> <i className='xi-search'></i></a>
                 </div>
             </div>
         </header>
